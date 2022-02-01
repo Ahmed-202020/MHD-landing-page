@@ -346,35 +346,54 @@
             width: 60px;
         }
     }
+    
     #slider-clients{
-        .carousel-inner{
-            .carousel-item{
-                .clients{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    .client{
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
-                        img{
-                            width: 150px;
-                            margin-bottom: 20px;
-                        }
-                        .name{
-                            font-size: 12pt;
-                            font-weight: bold;
-                            color: $black-color;
-                        }
-                    }
-                    .client + .client{
-                        margin-right: 50px;
-                    }
+        width: 100% ;
+        height: 250px;
+        overflow: hidden;
+        .clients{
+            width: 86%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: left;
+            overflow-x: auto;
+            &::-webkit-scrollbar{
+                visibility: hidden;
+            }
+            .client{
+                position: relative;
+                left: 0;
+                text-align: center;
+                transition: all 500ms ease;
+                -webkit-transition: all 500ms ease;
+                -moz-transition: all 500ms ease;
+                -ms-transition: all 500ms ease;
+                -o-transition: all 500ms ease;
+                img{
+                    width: 175px;
+                    margin-bottom: 20px;
+                }
+                .name{
+                    font-size: 12pt;
+                    font-weight: bold;
+                    color: $black-color;
                 }
             }
+            .client + .client{
+                margin-right: 50px;
+            }
+        }
+        .custom-btn{
+            width: 30px;
+            height: 30px;
+        }
+        .carousel-control-prev{
+            top: 60px;
+            right: 55px;
         }
         .carousel-control-next{
+            left: 55px;
+            top: 60px;
             img{
                 transform: rotate(180deg);
                 -webkit-transform: rotate(180deg);
@@ -494,10 +513,9 @@
                         margin-top: 5px;
                     }
                 }
-                .image{
-                    img{
-                        width: 100%;
-                    }
+                iframe{
+                    width: 100%;
+                    height: 200px;
                 }
             }
         }
@@ -674,14 +692,33 @@ html[dir = "ltr"]{
             }
         }
         #slider-clients{
-            .carousel-inner{
-                .carousel-item{
-                    .clients{
-                        .client + .client{
-                            margin-right: 0;
-                            margin-left: 50px;
-                        }
-                    }
+            overflow: hidden;
+            .clients{
+                .client + .client{
+                    margin-left: 50px;
+                    margin-right: 0;
+                }
+            }
+            .carousel-control-prev{
+                left: 55px;
+                right: initial;
+                img{
+                    transform: rotate(180deg);
+                    -webkit-transform: rotate(180deg);
+                    -moz-transform: rotate(180deg);
+                    -ms-transform: rotate(180deg);
+                    -o-transform: rotate(180deg);
+                }
+            }
+            .carousel-control-next{
+                right: 55px;
+                left: initial;
+                img{
+                    transform: rotate(0deg);
+                    -webkit-transform: rotate(0deg);
+                    -moz-transform: rotate(0deg);
+                    -ms-transform: rotate(0deg);
+                    -o-transform: rotate(0deg);
                 }
             }
         }

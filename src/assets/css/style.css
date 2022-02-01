@@ -488,47 +488,67 @@ body ul {
   width: 60px;
 }
 
-.our-clients #slider-clients .carousel-inner .carousel-item .clients {
+.our-clients #slider-clients {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.our-clients #slider-clients .clients {
+  width: 86%;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  overflow-x: auto;
 }
 
-.our-clients #slider-clients .carousel-inner .carousel-item .clients .client {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.our-clients #slider-clients .clients::-webkit-scrollbar {
+  visibility: hidden;
 }
 
-.our-clients #slider-clients .carousel-inner .carousel-item .clients .client img {
-  width: 150px;
+.our-clients #slider-clients .clients .client {
+  position: relative;
+  left: 0;
+  text-align: center;
+  transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+}
+
+.our-clients #slider-clients .clients .client img {
+  width: 175px;
   margin-bottom: 20px;
 }
 
-.our-clients #slider-clients .carousel-inner .carousel-item .clients .client .name {
+.our-clients #slider-clients .clients .client .name {
   font-size: 12pt;
   font-weight: bold;
   color: #343434;
 }
 
-.our-clients #slider-clients .carousel-inner .carousel-item .clients .client + .client {
+.our-clients #slider-clients .clients .client + .client {
   margin-right: 50px;
+}
+
+.our-clients #slider-clients .custom-btn {
+  width: 30px;
+  height: 30px;
+}
+
+.our-clients #slider-clients .carousel-control-prev {
+  top: 60px;
+  right: 55px;
+}
+
+.our-clients #slider-clients .carousel-control-next {
+  left: 55px;
+  top: 60px;
 }
 
 .our-clients #slider-clients .carousel-control-next img {
@@ -682,8 +702,9 @@ body ul {
   margin-top: 5px;
 }
 
-.footer .custom-items .item .map .image img {
+.footer .custom-items .item .map iframe {
   width: 100%;
+  height: 200px;
 }
 
 .footer .puplish {
@@ -848,9 +869,39 @@ html[dir="ltr"] .our-clients .title::after {
   margin-right: 0;
 }
 
-html[dir="ltr"] .our-clients #slider-clients .carousel-inner .carousel-item .clients .client + .client {
-  margin-right: 0;
+html[dir="ltr"] .our-clients #slider-clients {
+  overflow: hidden;
+}
+
+html[dir="ltr"] .our-clients #slider-clients .clients .client + .client {
   margin-left: 50px;
+  margin-right: 0;
+}
+
+html[dir="ltr"] .our-clients #slider-clients .carousel-control-prev {
+  left: 55px;
+  right: initial;
+}
+
+html[dir="ltr"] .our-clients #slider-clients .carousel-control-prev img {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+html[dir="ltr"] .our-clients #slider-clients .carousel-control-next {
+  right: 55px;
+  left: initial;
+}
+
+html[dir="ltr"] .our-clients #slider-clients .carousel-control-next img {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
 }
 
 html[dir="ltr"] .footer .custom-items .item .contact img {
