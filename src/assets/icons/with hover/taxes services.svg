@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="92.809" height="121.024" viewBox="0 0 92.809 121.024">
+  <g id="taxes_services" data-name="taxes services" transform="translate(-20.028 -10.916)">
+    <g id="Group_40955" data-name="Group 40955" transform="translate(20.028 10.916)">
+      <g id="Group_40953" data-name="Group 40953">
+        <path id="Path_31883" data-name="Path 31883" d="M20.028,10.916V128.255l6,3.685,20.191-12.386,20.2,12.386,20.191-12.386,20.2,12.386,6.024-3.693V10.916Z" transform="translate(-20.028 -10.916)" fill="#fff"/>
+        <g id="Group_40952" data-name="Group 40952" transform="translate(21.109 69.189)">
+          <path id="Path_31884" data-name="Path 31884" d="M33.662,55.6H84.253v4.645H33.662Z" transform="translate(-33.662 -55.604)" fill="#0066af"/>
+          <path id="Path_31885" data-name="Path 31885" d="M33.662,65.6H84.253v4.645H33.662Z" transform="translate(-33.662 -50.121)" fill="#0066af"/>
+        </g>
+      </g>
+      <g id="Group_40954" data-name="Group 40954" transform="translate(23.44 14.038)">
+        <path id="Path_31886" data-name="Path 31886" d="M51.011,35.826a9.292,9.292,0,1,0-6.565,2.716A9.294,9.294,0,0,0,51.011,35.826Zm-9.845-9.847a4.64,4.64,0,1,1,0,6.562A4.627,4.627,0,0,1,41.166,25.979Z" transform="translate(-35.168 -19.983)" fill="#c51c22"/>
+        <path id="Path_31887" data-name="Path 31887" d="M68.689,40.374a9.28,9.28,0,1,0,0,13.129A9.294,9.294,0,0,0,68.689,40.374ZM65.406,50.22a4.637,4.637,0,1,1,0-6.562A4.646,4.646,0,0,1,65.406,50.22Z" transform="translate(-25.476 -10.292)" fill="#c51c22"/>
+        <path id="Path_31888" data-name="Path 31888" d="M0,0H49.208V4.645H0Z" transform="translate(3.914 38.72) rotate(-45)" fill="#c51c22"/>
+      </g>
+    </g>
+  </g>
+</svg>
