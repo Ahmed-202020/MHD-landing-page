@@ -348,11 +348,12 @@
     }
     
     #slider-clients{
-        width: 100% ;
+        width: 97% ;
+        margin: auto;
         height: 250px;
         overflow: hidden;
         .clients{
-            width: 86%;
+            width: 88% ;
             margin: 0 auto;
             display: flex;
             justify-content: left;
@@ -389,10 +390,10 @@
         }
         .carousel-control-prev{
             top: 60px;
-            right: 55px;
+            right: 40px;
         }
         .carousel-control-next{
-            left: 55px;
+            left: 40px;
             top: 60px;
             img{
                 transform: rotate(180deg);
@@ -528,6 +529,784 @@
         margin-top: 60px;
     }
 }
+
+//responsive-design(rtl)
+
+@media (max-width: 1399.98px) {
+    .features{
+        top: -130px;
+    }
+    .our-clients{
+        #slider-clients{
+            width: 88%;
+        }
+    }
+}
+@media (min-width: 1280px) and (max-width: 1281px){
+    .header{
+        #slider{
+            height: 920px;
+            .carousel-inner{
+                .carousel-item{
+                    .carousel-caption{
+                        padding-inline: 140px;
+                        .btn{
+                            margin-bottom: 230px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .our-clients{
+        #slider-clients{
+            width: 96%;
+        }
+    }
+}
+@media (max-width: 1199.98px) { 
+    .header{
+        #slider{
+            height: 860px;
+            .carousel-inner{
+                .carousel-item{
+                    .carousel-caption{
+                        padding-inline: 100px;
+                        .text{
+                            padding-inline: 12px;
+                        }
+                        .btn{
+                            margin-bottom: 210px;
+                        }
+                    }
+                }
+            }
+            .carousel-control-prev , .carousel-control-next{
+                top: 360px;
+            }
+        }
+    }
+    .about-us{
+        .text{
+            padding-inline: 90px;
+        }
+    }
+    .our-clients{
+        #slider-clients{
+            width: 82%;
+            .carousel-control-prev{
+                right: 30px;
+            }
+            .carousel-control-next{
+                left: 30px;
+            }
+        }
+    }
+}
+@media (min-width: 1024px) and (max-width: 1025px){
+    .header{
+        .navbar{
+            .navbar-collapse{
+                .navbar-nav{
+                    .nav-item + .nav-item{
+                        margin-right: 70px;
+                    }
+                }
+            }
+        }
+        #slider{
+            margin-top: -180px;
+            height: 810px;
+            .carousel-inner{
+                .carousel-item{
+                    .carousel-caption{
+                        .btn{
+                            margin-bottom: 240px;
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+            .carousel-indicators{
+                right: 65px;
+                bottom: 115px;
+            }
+            .carousel-control-prev , .carousel-control-next{
+                top: 315px ; 
+            }
+        }
+    }
+    .features{
+        width: 800px;
+        top: -190px;
+    }
+    .why-choose-us{
+        padding-inline: 290px;
+    }
+    .our-clients{
+        #slider-clients{
+            .clients{
+                width: 75%;
+            }
+        }
+    }
+}
+@media (max-width: 991.98px) {
+    .header{
+        .navbar{
+            height: 150px;
+            .navbar-collapse{
+                .navbar-nav{
+                    padding-block: 50px;
+                    align-items: center;
+                    justify-content: center;
+                    padding-left: 0;
+                    border-radius: 15px;
+                    -webkit-border-radius: 15px;
+                    -moz-border-radius: 15px;
+                    -ms-border-radius: 15px;
+                    -o-border-radius: 15px;
+                    background-color: $main-color;
+                    color: $white-color;
+                    .nav-item{
+                        background-image: linear-gradient($buttons-color , $main-color);
+                        width: 80%;
+                        text-align: right;
+                        padding-right: 15px;
+                        border-radius: 10px;
+                        -webkit-border-radius: 10px;
+                        -moz-border-radius: 10px;
+                        -ms-border-radius: 10px;
+                        -o-border-radius: 10px;
+                    }
+                    .nav-item+.nav-item{
+                        margin-right: 0;
+                        margin-top: 45px;
+                    }
+                    .dropdown{
+                        .dropdown-menu{
+                            right: initial;
+                        }
+                    }
+                }
+            }
+            .navbar-brand{
+                margin-top: 12px;
+                width: 90px;
+            }
+            .navbar-toggler{
+                background-image: linear-gradient($buttons-color-2 , $sub-color);
+                box-shadow: none;
+                span{
+                    color: $white-color;
+                }
+            }
+        }
+        #slider{
+            height: 750px;
+            margin-top: -150px;
+            .carousel-inner{
+                .carousel-item{
+                    .carousel-caption{
+                        padding-inline: 60px;
+                        .btn{
+                            width: 300px;
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+            .carousel-control-prev , .carousel-control-next{
+                top: 300px;
+            }
+        }
+    }
+    .features{
+        width: 800px;
+        top: -150px;
+    }
+    .about-us{
+        padding-inline: 0;
+    }
+    .services{
+        padding-inline: 25px;
+    }
+    .our-clients{
+        #slider-clients{
+            .clients{
+                width: 77%;
+            }
+        }
+    }
+    .footer{
+        .custom-col{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .custom-items{
+            .item{
+                .contact{
+                    margin-right: 25px;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 912px) and (max-width: 913px){
+    .header{
+        #slider{
+            height: 700px;
+            .carousel-inner{
+                .carousel-item{
+                    .carousel-caption{
+                        .title{
+                            margin-bottom: 15px;
+                            font-size: 20pt;
+                        }
+                        .text{
+                            font-size: 16pt;
+                        }
+                        .btn{
+                            margin-top: 25px;
+                        }
+                    }
+                }
+            }
+            .carousel-control-prev , .carousel-control-next{
+                top: 250px;
+            }
+        }
+    }
+    .our-clients{
+        #slider-clients{
+            .clients{
+                width: 85%;
+            }
+        }
+    }
+}
+@media (min-width: 820px) and (max-width: 821px){
+    .header{
+        #slider{
+            height: 630px;
+            .carousel-inner{
+                .carousel-item{
+                    .carousel-caption{
+                        .title{
+                            margin-bottom: 15px;
+                            font-size: 20pt;
+                        }
+                        .text{
+                            font-size: 14pt;
+                        }
+                        .btn{
+                            margin-top: 0;
+                            margin-bottom: 185px;
+                        }
+                    }
+                }
+            }
+            .carousel-control-prev , .carousel-control-next{
+                top: 250px;
+            }
+            .carousel-indicators{
+                right: 10px;
+                bottom: 80px;
+            }
+        }
+    }
+    .features{
+        width: 730px;
+        top: -136px;
+        padding-block: 10px;
+    }
+    .services{
+        padding-inline: 15px;
+        .services{
+            .service{
+                padding: 25px;
+                .sub{
+                    font-size: 18pt;
+                }
+                .image{
+                    img{
+                        width: 100px;
+                    }
+                }
+            }
+        }
+    }
+    .why-choose-us{
+        padding-inline: 170px;
+    }
+    .our-clients{
+        #slider-clients{
+            .clients{
+                width: 93%;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .header{
+        #slider{
+            margin-top: -100px;
+            height: 600px;
+            .carousel-inner{
+                .carousel-item{
+                    .carousel-caption{
+                        padding-inline: 10px;
+                        .title{
+                            font-size: 20pt;
+                            margin-bottom: 15px;
+                        }
+                        .text{
+                            font-size: 16pt;
+                        }
+                        .btn{
+                            margin-bottom: 185px;
+                        }
+                    }
+                }
+            }
+            .carousel-indicators{
+                right: 0;
+                bottom: 70px;
+            }
+            .carousel-control-prev{
+                margin-right: 60px;
+                top: 200px;
+            }
+            .carousel-control-next{
+                margin-left: 60px;
+                top: 200px;
+            }
+        }
+    }
+    .features{
+        width: 650px;
+    }
+    .about-us{
+        .text{
+            padding-inline: 60px;
+        }
+    }
+    .services{
+        padding-inline: 10px;
+        .services{
+            grid-template: auto / repeat(2 , 1fr);
+            .image{
+                img{
+                    width: 100px;
+                }
+            }
+            .service{
+                padding-block: 25px;
+                .sub{
+                    font-size: 16pt;
+                }
+                .text{
+                    font-size: 12pt;
+                }
+            }
+        }
+    }
+    .why-choose-us{
+        padding-inline: 150px;
+    }
+    .our-clients{
+        #slider-clients{
+            .clients{
+                width: 100%;
+            }
+        }
+    }
+}
+@media (max-width: 767.98px) {
+    .footer{
+        .container{
+            max-width: 700px;
+        }
+        .logo{
+            width: 160px;
+            margin-bottom: 15px;
+            .text{
+                font-size: 15pt;
+            }
+        }
+        .items{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 80px;
+            .item{
+                font-weight: bold ;
+            }
+            .item + .item{
+                margin-top: 0;
+                margin-right: 20px;
+            }
+        }
+        .custom-items{
+            .item{
+                .contact{
+                    margin-right: 0;
+                }
+            }
+        }
+        .title{
+            margin-bottom: 20px;
+        }
+        .custom-col{
+            align-items: stretch;
+        }
+    }
+}
+@media (max-width: 575.98px) {
+    .header{
+        #slider{
+            margin-top: -50px;
+            .carousel-inner{
+                .carousel-item{
+                    .carousel-caption{
+                        .text{
+                            overflow: hidden;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 3;
+                            -webkit-box-orient: vertical;
+                        }
+                        .btn{
+                            margin-top: 0px;
+                            margin-bottom: 270px;
+                            width: 220px;
+                            font-size: 15pt;
+                        }
+                    }
+                }
+            }
+            .carousel-control-prev , .carousel-control-next{
+                top: 150px;
+            }
+            .carousel-indicators{
+                bottom: 180px;
+            }
+        }
+    }
+    .features{
+        padding-block: 5px;
+        width: 450px;
+        margin-bottom: 0;
+        top: -260px;
+        align-items: baseline;
+        .feature{
+            img{
+                width: 50px;
+            }
+            .text{
+                font-size: 12pt;
+            }
+        }
+    }
+    .about-us{
+        .text{
+            padding-inline: 50px;
+        }
+    }
+    .services{
+        .services{
+            gap: 20px 0;
+            .service{
+                grid-column: none;
+            }
+        }
+    }
+    .why-choose-us{
+        padding-inline: 100px;
+    }
+    .our-clients{
+        #slider-clients{
+            .clients{
+                width: 85%;
+            }
+        }
+    }
+    .footer{
+        .container{
+            max-width: 530px;
+        }
+        .logo{
+            width: 125px;
+        }
+    }
+}
+@media (min-width: 540px) and (max-width: 541px){
+    .header{
+        #slider{
+            height: 578px;
+        }
+    }
+    .about-us{
+        .text{
+            padding-inline: 25px;
+            font-size: 14pt;
+        }
+    }
+    .our-clients{
+        #slider-clients{
+            .clients{
+                width: 91%;
+            }
+        }
+    }
+}
+@media (min-width: 412px) and (max-width: 415px){
+    .header{
+        .navbar{
+            padding-inline: 10px;
+        }
+        #slider{
+            height: 500px;
+            .carousel-inner{
+                .carousel-item{
+                    .carousel-caption{
+                        .title{
+                            font-size: 15pt;
+                            margin-bottom: 10px;
+                        }
+                        .text{
+                            font-size: 12px;
+                        }
+                        .btn{
+                            width: 150px;
+                            font-size: 12pt;
+                        }
+                    }
+                }
+            }
+            .carousel-control-next , .carousel-control-prev{
+                top: 77px;
+            }
+            .carousel-control-prev{
+                right: -23px;
+            }
+            .carousel-control-next{
+                left: -23px;
+            }
+        }
+    }
+    .features{
+        padding: 5px;
+        width: 350px;
+        .feature{
+            img{
+                width: 40px;
+            }
+            .text{
+                font-size: 10pt;
+            }
+        }
+    }
+    .about-us{
+        .title{
+            margin-bottom: 45px;
+        }
+        .text{
+            padding-inline: 30px;
+            font-size: 15pt;
+        }
+    }
+    .services{
+        .services{
+            gap: 20px 0;
+            .service{
+                grid-column: none;
+            }
+        }
+    }
+    .why-choose-us {
+        padding-inline: 70px;
+    }
+    .our-clients{
+        #slider-clients{
+            .clients{
+                width: 55%;
+            }
+        }
+    }
+    .footer{
+        .container{
+            max-width: 380px;
+        }
+    }
+}
+@media (min-width: 360px) and (max-width: 394px){
+    .header{
+        .navbar{
+            padding-inline: 10px;
+        }
+        #slider{
+            height: 488px;
+            .carousel-inner{
+                .carousel-item{
+                    .carousel-caption{
+                        .title{
+                            font-size: 14pt;
+                        }
+                        .text{
+                            -webkit-line-clamp: 2 ; 
+                            font-size: 10pt;
+                        }
+                        .btn{
+                            width: 130px;
+                            font-size: 10pt;
+                        }
+                    }
+                }
+            }
+            .carousel-control-prev , .carousel-control-next{
+                top: 83px;
+            }
+            .carousel-control-prev{
+                margin-right: 40px;
+            }
+            .carousel-control-next{
+                margin-left: 40px;
+            }
+        }
+    }
+    .about-us{
+        margin-top: -80px;
+        .text{
+            padding-inline: 40px;
+            font-size: 15pt;
+        }
+    }
+    .features{
+        width: 350px;
+        padding-inline: 5px;
+        .feature{
+            img{
+                width: 40px;
+            }
+            .text{
+                font-size: 9pt;
+            }
+        }
+    }
+    .services{
+        .services{
+            gap: 20px 0;
+            .service{
+                grid-column: none;
+            }
+        }
+    }
+    .why-choose-us{
+        padding-inline: 60px;
+        .title{
+            font-size: 20pt;
+        }
+        .btn{
+            width: 300px;
+        }
+    }
+    .our-clients{
+        #slider-clients{
+            .clients{
+                width: 55%;
+            }
+        }
+    }
+}
+@media (min-width: 280px) and (max-width: 358px){
+    .header{
+        .navbar{
+            padding-inline: 0;
+        }
+        #slider{
+            height: 455px;
+            .carousel-inner{
+                .carousel-item{
+                    .carousel-caption{
+                        .title{
+                            font-size: 12pt;
+                            margin-bottom: 10px;
+                        }
+                        .text{
+                            -webkit-line-clamp: 2 ; 
+                            font-size: 8pt;
+                        }
+                        .btn{
+                            width: 130px;
+                            font-size: 10pt;
+                        }
+                    }
+                }
+            }
+            .carousel-control-prev , .carousel-control-next{
+                top: 55px;
+                width: 30px;
+                height: 30px;
+                span{
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+            .carousel-control-prev{
+                margin-right: 20px;
+            }
+            .carousel-control-next{
+                margin-left: 20px;
+            }
+        }
+    }
+    .about-us{
+        margin-top: -80px;
+        .text{
+            padding-inline: 10px;
+            font-size: 15pt;
+        }
+    }
+    .features{
+        width: 270px;
+        padding-inline: 5px;
+        .feature{
+            img{
+                width: 40px;
+            }
+            .text{
+                font-size: 9pt;
+            }
+        }
+    }
+    .services{
+        padding-inline: 5px;
+        .services{
+            gap: 20px 0;
+            .service{
+                grid-column: none;
+            }
+        }
+    }
+    .why-choose-us{
+        padding-inline: 30px;
+        .title{
+            font-size: 20pt;
+        }
+        .btn{
+            width: 200px;
+        }
+    }
+    .our-clients{
+        #slider-clients{
+            .clients{
+                width: 76%;
+            }
+        }
+    }
+}
+
 
 // ltr design
 
@@ -700,25 +1479,21 @@ html[dir = "ltr"]{
                 }
             }
             .carousel-control-prev{
-                left: 55px;
-                right: initial;
-                img{
-                    transform: rotate(180deg);
-                    -webkit-transform: rotate(180deg);
-                    -moz-transform: rotate(180deg);
-                    -ms-transform: rotate(180deg);
-                    -o-transform: rotate(180deg);
-                }
-            }
-            .carousel-control-next{
-                right: 55px;
-                left: initial;
                 img{
                     transform: rotate(0deg);
                     -webkit-transform: rotate(0deg);
                     -moz-transform: rotate(0deg);
                     -ms-transform: rotate(0deg);
                     -o-transform: rotate(0deg);
+                }
+            }
+            .carousel-control-next{
+                img{
+                    transform: rotate(180deg);
+                    -webkit-transform: rotate(180deg);
+                    -moz-transform: rotate(180deg);
+                    -ms-transform: rotate(180deg);
+                    -o-transform: rotate(180deg);
                 }
             }
         }
@@ -752,4 +1527,118 @@ html[dir = "ltr"]{
         }
     }
 }
+
+//responsive-design(ltr)
+
+
+@media(min-width: 1024px) and (max-width: 1025px){
+    html[dir = "ltr"]{
+        .header{
+            .navbar{
+                .navbar-collapse{
+                    .navbar-nav{
+                        .nav-item + .nav-item{
+                            margin-right: 0;
+                            margin-left: 70px;
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}
+@media (max-width: 991.98px) {
+    html[dir = "ltr"]{
+        .header{
+            .navbar{
+                .navbar-brand{
+                    margin-top: 0;
+                }
+                .navbar-collapse{
+                    .navbar-nav{
+                        padding-left: 0;
+                        padding-right: 0;
+                        .nav-item{
+                            text-align: left;
+                            padding-right: 0;
+                            padding-left: 15px;
+                        }
+                        .nav-item+.nav-item{
+                            margin-right: 0;
+                            margin-left: 0;
+                        }
+                        .dropdown{
+                            .dropdown-menu{
+                                right: initial;
+                                left: initial;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer{
+            .custom-items{
+                .item{
+                    .contact{
+                        margin-right: 0;
+                        margin-left: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px){
+    html[dir = "ltr"]{
+        .services{
+            .services{
+                grid-template: auto / repeat(2 , 1fr);
+            }
+        }
+    }    
+}
+@media (max-width: 767.98px) {
+    html[dir = "ltr"]{
+        .footer{
+            .items{
+                .item + .item{
+                    margin-right: 0;
+                    margin-left: 20px;
+                }
+            }
+            .custom-items{
+                .item{
+                    .contact{
+                        margin-right: 0;
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 575.98px){
+    html[dir = "ltr"]{
+        .services{
+            .services{
+                grid-template: auto / repeat(2 , 1fr);
+            }
+        }
+    }
+}
+@media (min-width: 280px) and (max-width: 576px){
+    html[dir = "ltr"]{
+    .services{
+        .services{
+            gap: 20px 0;
+            .service{
+                grid-column: none;
+            }
+        }
+    }
+    }
+}
+
+
 
