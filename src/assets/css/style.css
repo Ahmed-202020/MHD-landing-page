@@ -48,7 +48,7 @@ body ul {
   -o-border-radius: 5px;
 }
 
-.header #slider .carousel-inner .carousel-item .carousel-caption .btn, .why-choose-us .btn, .footer .custom-items .item .form-groub .btn {
+.header #slider .button .btn, .why-choose-us .btn, .footer .custom-items .item .form-groub .btn {
   margin-top: 50px;
   margin-bottom: 300px;
   -webkit-box-shadow: none;
@@ -71,7 +71,7 @@ body ul {
   -o-transition: all 300ms ease;
 }
 
-.header #slider .carousel-inner .carousel-item .carousel-caption .btn:hover, .why-choose-us .btn:hover, .footer .custom-items .item .form-groub .btn:hover {
+.header #slider .button .btn:hover, .why-choose-us .btn:hover, .footer .custom-items .item .form-groub .btn:hover {
   filter: brightness(90%);
   -webkit-filter: brightness(90%);
 }
@@ -174,6 +174,7 @@ body ul {
 }
 
 .header #slider {
+  position: relative;
   margin-top: -240px;
   height: 1000px;
 }
@@ -184,6 +185,7 @@ body ul {
 
 .header #slider .carousel-inner .carousel-item {
   height: 100%;
+  position: relative;
 }
 
 .header #slider .carousel-inner .carousel-item img {
@@ -192,6 +194,7 @@ body ul {
 
 .header #slider .carousel-inner .carousel-item .carousel-caption {
   padding-top: 0;
+  margin-bottom: 420px;
   padding-inline: 180px;
 }
 
@@ -206,6 +209,22 @@ body ul {
   color: #343434;
   font-size: 18pt;
   padding-inline: 40px;
+}
+
+.header #slider .button {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header #slider .button .btn {
+  position: absolute;
+  bottom: 300px;
+  margin-bottom: 0;
 }
 
 .header #slider .carousel-control-prev, .header #slider .carousel-control-next {
@@ -717,6 +736,9 @@ body ul {
 }
 
 @media (max-width: 1399.98px) {
+  .header #slider .carousel-inner .carousel-item .carousel-caption {
+    margin-bottom: 400px;
+  }
   .features {
     top: -130px;
   }
@@ -731,6 +753,7 @@ body ul {
   }
   .header #slider .carousel-inner .carousel-item .carousel-caption {
     padding-inline: 140px;
+    margin-bottom: 350px;
   }
   .header #slider .carousel-inner .carousel-item .carousel-caption .btn {
     margin-bottom: 230px;
@@ -741,17 +764,25 @@ body ul {
 }
 
 @media (max-width: 1199.98px) {
+  .header .navbar .navbar-collapse .navbar-nav .nav-item + .nav-item {
+    margin-right: 75px;
+    margin-left: 0;
+  }
   .header #slider {
     height: 860px;
   }
   .header #slider .carousel-inner .carousel-item .carousel-caption {
     padding-inline: 100px;
+    margin-bottom: 300px;
   }
   .header #slider .carousel-inner .carousel-item .carousel-caption .text {
     padding-inline: 12px;
   }
   .header #slider .carousel-inner .carousel-item .carousel-caption .btn {
     margin-bottom: 210px;
+  }
+  .header #slider .button .btn {
+    bottom: 245px;
   }
   .header #slider .carousel-control-prev, .header #slider .carousel-control-next {
     top: 360px;
@@ -771,8 +802,11 @@ body ul {
 }
 
 @media (min-width: 1024px) and (max-width: 1025px) {
+  .header .navbar .navbar-collapse .navbar-nav {
+    padding-left: 0;
+  }
   .header .navbar .navbar-collapse .navbar-nav .nav-item + .nav-item {
-    margin-right: 70px;
+    margin-right: 50px !important;
   }
   .header #slider {
     margin-top: -180px;
@@ -924,6 +958,9 @@ body ul {
   .header #slider {
     height: 630px;
   }
+  .header #slider .carousel-inner .carousel-item .carousel-caption {
+    margin-bottom: 230px;
+  }
   .header #slider .carousel-inner .carousel-item .carousel-caption .title {
     margin-bottom: 15px;
     font-size: 20pt;
@@ -931,9 +968,9 @@ body ul {
   .header #slider .carousel-inner .carousel-item .carousel-caption .text {
     font-size: 14pt;
   }
-  .header #slider .carousel-inner .carousel-item .carousel-caption .btn {
-    margin-top: 0;
-    margin-bottom: 185px;
+  .header #slider .button .btn {
+    bottom: 205px !important;
+    width: 300px;
   }
   .header #slider .carousel-control-prev, .header #slider .carousel-control-next {
     top: 250px;
@@ -973,6 +1010,7 @@ body ul {
     height: 600px;
   }
   .header #slider .carousel-inner .carousel-item .carousel-caption {
+    margin-bottom: 250px;
     padding-inline: 10px;
   }
   .header #slider .carousel-inner .carousel-item .carousel-caption .title {
@@ -982,8 +1020,10 @@ body ul {
   .header #slider .carousel-inner .carousel-item .carousel-caption .text {
     font-size: 16pt;
   }
-  .header #slider .carousel-inner .carousel-item .carousel-caption .btn {
-    margin-bottom: 185px;
+  .header #slider .button .btn {
+    bottom: 210px;
+    width: 250px;
+    font-size: 15pt;
   }
   .header #slider .carousel-indicators {
     right: 0;
@@ -1077,6 +1117,9 @@ body ul {
   .header #slider {
     margin-top: -50px;
   }
+  .header #slider .carousel-inner .carousel-item .carousel-caption {
+    margin-bottom: 340px;
+  }
   .header #slider .carousel-inner .carousel-item .carousel-caption .text {
     overflow: hidden;
     display: -webkit-box;
@@ -1094,6 +1137,9 @@ body ul {
   }
   .header #slider .carousel-indicators {
     bottom: 180px;
+  }
+  .header #slider .button .btn {
+    bottom: 322px;
   }
   .features {
     padding-block: 5px;
@@ -1153,6 +1199,9 @@ body ul {
   .header #slider {
     height: 500px;
   }
+  .header #slider .carousel-inner .carousel-item .carousel-caption {
+    margin-bottom: 315px;
+  }
   .header #slider .carousel-inner .carousel-item .carousel-caption .title {
     font-size: 15pt;
     margin-bottom: 10px;
@@ -1160,9 +1209,11 @@ body ul {
   .header #slider .carousel-inner .carousel-item .carousel-caption .text {
     font-size: 12px;
   }
-  .header #slider .carousel-inner .carousel-item .carousel-caption .btn {
-    width: 150px;
+  .header #slider .button .btn {
+    width: 170px;
     font-size: 12pt;
+    bottom: 310px;
+    padding: 6px 5px;
   }
   .header #slider .carousel-control-next, .header #slider .carousel-control-prev {
     top: 77px;
@@ -1214,8 +1265,12 @@ body ul {
   .header #slider {
     height: 488px;
   }
+  .header #slider .carousel-inner .carousel-item .carousel-caption {
+    margin-bottom: 310px;
+  }
   .header #slider .carousel-inner .carousel-item .carousel-caption .title {
     font-size: 14pt;
+    margin-bottom: 5px;
   }
   .header #slider .carousel-inner .carousel-item .carousel-caption .text {
     -webkit-line-clamp: 2;
@@ -1225,14 +1280,20 @@ body ul {
     width: 130px;
     font-size: 10pt;
   }
+  .header #slider .button .btn {
+    width: 170px;
+    font-size: 10pt;
+    bottom: 310px;
+    padding: 6px 5px;
+  }
   .header #slider .carousel-control-prev, .header #slider .carousel-control-next {
     top: 83px;
   }
   .header #slider .carousel-control-prev {
-    margin-right: 40px;
+    margin-right: 22px;
   }
   .header #slider .carousel-control-next {
-    margin-left: 40px;
+    margin-left: 22px;
   }
   .about-us {
     margin-top: -80px;
@@ -1278,9 +1339,12 @@ body ul {
   .header #slider {
     height: 455px;
   }
+  .header #slider .carousel-inner .carousel-item .carousel-caption {
+    margin-bottom: 310px;
+  }
   .header #slider .carousel-inner .carousel-item .carousel-caption .title {
     font-size: 12pt;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
   .header #slider .carousel-inner .carousel-item .carousel-caption .text {
     -webkit-line-clamp: 2;
@@ -1289,6 +1353,12 @@ body ul {
   .header #slider .carousel-inner .carousel-item .carousel-caption .btn {
     width: 130px;
     font-size: 10pt;
+  }
+  .header #slider .button .btn {
+    width: 150px;
+    font-size: 10pt;
+    bottom: 310px;
+    padding: 6px 5px;
   }
   .header #slider .carousel-control-prev, .header #slider .carousel-control-next {
     top: 55px;
@@ -1544,10 +1614,21 @@ html[dir="ltr"] .footer .custom-items .item .map .location .address {
   margin-left: 35px;
 }
 
-@media (min-width: 1024px) and (max-width: 1025px) {
+@media (max-width: 1199.98px) {
   html[dir="ltr"] .header .navbar .navbar-collapse .navbar-nav .nav-item + .nav-item {
-    margin-right: 0;
-    margin-left: 70px;
+    margin-left: 75px !important;
+    margin-right: 0 !important;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1025px) {
+  html[dir="ltr"] .header .navbar .navbar-collapse .navbar-nav {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  html[dir="ltr"] .header .navbar .navbar-collapse .navbar-nav .nav-item + .nav-item {
+    margin-right: 0 !important;
+    margin-left: 50px !important;
   }
 }
 
@@ -1565,8 +1646,8 @@ html[dir="ltr"] .footer .custom-items .item .map .location .address {
     padding-left: 15px;
   }
   html[dir="ltr"] .header .navbar .navbar-collapse .navbar-nav .nav-item + .nav-item {
-    margin-right: 0;
-    margin-left: 0;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
   }
   html[dir="ltr"] .header .navbar .navbar-collapse .navbar-nav .dropdown .dropdown-menu {
     right: initial;
