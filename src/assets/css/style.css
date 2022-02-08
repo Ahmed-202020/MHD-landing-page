@@ -500,6 +500,19 @@ body ul {
 
 .our-clients {
   padding: 100px 0 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .our-clients .title::after {
@@ -507,76 +520,69 @@ body ul {
   width: 60px;
 }
 
-.our-clients #slider-clients {
-  width: 97%;
-  margin: auto;
-  height: 250px;
-  overflow: hidden;
+.our-clients .owl-stage-outer {
+  height: 245px !important;
 }
 
-.our-clients #slider-clients .clients {
-  width: 88%;
-  margin: 0 auto;
+.our-clients .owl-carousel {
+  position: relative !important;
+}
+
+.our-clients .owl-item .name {
+  font-size: 12pt;
+  font-weight: bold;
+}
+
+.our-clients .owl-nav {
+  position: absolute;
+  bottom: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  overflow-x: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
 }
 
-.our-clients #slider-clients .clients::-webkit-scrollbar {
-  visibility: hidden;
+.our-clients .owl-nav [class*=owl-] {
+  background-color: initial !important;
+  color: initial !important;
 }
 
-.our-clients #slider-clients .clients .client {
-  position: relative;
-  left: 0;
-  text-align: center;
-  transition: all 500ms ease;
-  -webkit-transition: all 500ms ease;
-  -moz-transition: all 500ms ease;
-  -ms-transition: all 500ms ease;
-  -o-transition: all 500ms ease;
+.our-clients .owl-nav .owl-prev {
+  margin-right: -50px !important;
+  height: 50px;
 }
 
-.our-clients #slider-clients .clients .client img {
-  width: 175px;
-  margin-bottom: 20px;
+.our-clients .owl-nav .owl-prev span {
+  content: url("../icons/Group 41010.svg");
 }
 
-.our-clients #slider-clients .clients .client .name {
-  font-size: 12pt;
-  font-weight: bold;
-  color: #343434;
+.our-clients .owl-nav .owl-next {
+  margin-left: -50px !important;
+  height: 50px;
+  transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
 }
 
-.our-clients #slider-clients .clients .client + .client {
-  margin-right: 50px;
+.our-clients .owl-nav .owl-next span {
+  content: url("../icons/Group 41010.svg");
+  transform: rotateX(-180deg);
+  -webkit-transform: rotateX(-180deg);
+  -moz-transform: rotateX(-180deg);
+  -ms-transform: rotateX(-180deg);
+  -o-transform: rotateX(-180deg);
 }
 
-.our-clients #slider-clients .custom-btn {
-  width: 30px;
-  height: 30px;
-}
-
-.our-clients #slider-clients .carousel-control-prev {
-  top: 60px;
-  right: 40px;
-}
-
-.our-clients #slider-clients .carousel-control-next {
-  left: 40px;
-  top: 60px;
-}
-
-.our-clients #slider-clients .carousel-control-next img {
-  transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
+.our-clients .owl-dot {
+  display: none !important;
 }
 
 .footer {
@@ -742,8 +748,8 @@ body ul {
   .features {
     top: -130px;
   }
-  .our-clients #slider-clients {
-    width: 88%;
+  .our-clients .owl-stage-outer {
+    height: 225px !important;
   }
 }
 
@@ -757,9 +763,6 @@ body ul {
   }
   .header #slider .carousel-inner .carousel-item .carousel-caption .btn {
     margin-bottom: 230px;
-  }
-  .our-clients #slider-clients {
-    width: 96%;
   }
 }
 
@@ -790,14 +793,14 @@ body ul {
   .about-us .text {
     padding-inline: 90px;
   }
-  .our-clients #slider-clients {
-    width: 82%;
+}
+
+@media (min-width: 1199px) and (max-width: 1200px) {
+  .our-clients .owl-item {
+    margin-left: 98px !important;
   }
-  .our-clients #slider-clients .carousel-control-prev {
-    right: 30px;
-  }
-  .our-clients #slider-clients .carousel-control-next {
-    left: 30px;
+  .our-clients .owl-item .item {
+    width: 175px;
   }
 }
 
@@ -830,8 +833,17 @@ body ul {
   .why-choose-us {
     padding-inline: 290px;
   }
-  .our-clients #slider-clients .clients {
-    width: 75%;
+  .our-clients .owl-nav .owl-next {
+    margin-left: -17px !important;
+  }
+  .our-clients .owl-nav .owl-prev {
+    margin-right: -22px !important;
+  }
+  .our-clients .owl-item {
+    margin-left: 98px !important;
+  }
+  .our-clients .owl-item .item {
+    width: 175px;
   }
 }
 
@@ -912,8 +924,17 @@ body ul {
   .services {
     padding-inline: 25px;
   }
-  .our-clients #slider-clients .clients {
-    width: 77%;
+  .our-clients .owl-stage-outer {
+    height: 435px !important;
+  }
+  .our-clients .owl-stage-outer .owl-item .name {
+    font-size: 17pt;
+  }
+  .our-clients .owl-stage-outer .owl-item .item {
+    width: 100%;
+  }
+  .our-clients .owl-nav {
+    bottom: 235px;
   }
   .footer .custom-col {
     display: -webkit-box;
@@ -948,9 +969,6 @@ body ul {
   }
   .header #slider .carousel-control-prev, .header #slider .carousel-control-next {
     top: 250px;
-  }
-  .our-clients #slider-clients .clients {
-    width: 85%;
   }
 }
 
@@ -999,9 +1017,6 @@ body ul {
   .why-choose-us {
     padding-inline: 170px;
   }
-  .our-clients #slider-clients .clients {
-    width: 93%;
-  }
 }
 
 @media (max-width: 768px) {
@@ -1036,6 +1051,12 @@ body ul {
   .header #slider .carousel-control-next {
     margin-left: 60px;
     top: 200px;
+  }
+  .our-clients .owl-nav .owl-prev {
+    margin-right: -18px !important;
+  }
+  .our-clients .owl-nav .owl-next {
+    margin-left: -18px !important;
   }
   .features {
     width: 650px;
@@ -1072,6 +1093,15 @@ body ul {
 }
 
 @media (max-width: 767.98px) {
+  .our-clients .owl-nav {
+    bottom: 280px;
+  }
+  .our-clients .owl-nav .owl-prev {
+    margin-right: -50px !important;
+  }
+  .our-clients .owl-nav .owl-next {
+    margin-left: -50px !important;
+  }
   .footer .container {
     max-width: 700px;
   }
@@ -1168,8 +1198,17 @@ body ul {
   .why-choose-us {
     padding-inline: 100px;
   }
-  .our-clients #slider-clients .clients {
-    width: 85%;
+  .our-clients .owl-stage-outer {
+    height: 625px !important;
+  }
+  .our-clients .owl-nav {
+    bottom: 335px;
+  }
+  .our-clients .owl-nav .owl-prev {
+    margin-right: 0 !important;
+  }
+  .our-clients .owl-nav .owl-next {
+    margin-left: 0 !important;
   }
   .footer .container {
     max-width: 530px;
@@ -1250,8 +1289,14 @@ body ul {
   .why-choose-us {
     padding-inline: 70px;
   }
-  .our-clients #slider-clients .clients {
-    width: 55%;
+  .our-clients .owl-nav {
+    bottom: 410px;
+  }
+  .our-clients .owl-nav .owl-prev {
+    margin-right: -10px !important;
+  }
+  .our-clients .owl-nav .owl-next {
+    margin-left: -10px !important;
   }
   .footer .container {
     max-width: 380px;
@@ -1327,8 +1372,8 @@ body ul {
   .why-choose-us .btn {
     width: 300px;
   }
-  .our-clients #slider-clients .clients {
-    width: 55%;
+  .our-clients .owl-nav {
+    bottom: 430px;
   }
 }
 
@@ -1405,13 +1450,13 @@ body ul {
     padding-inline: 30px;
   }
   .why-choose-us .title {
-    font-size: 20pt;
+    font-size: 18pt;
   }
   .why-choose-us .btn {
     width: 200px;
   }
-  .our-clients #slider-clients .clients {
-    width: 76%;
+  .our-clients .owl-nav {
+    bottom: 475px;
   }
 }
 
@@ -1569,31 +1614,6 @@ html[dir="ltr"] .our-clients .title::after {
   margin-right: 0;
 }
 
-html[dir="ltr"] .our-clients #slider-clients {
-  overflow: hidden;
-}
-
-html[dir="ltr"] .our-clients #slider-clients .clients .client + .client {
-  margin-left: 50px;
-  margin-right: 0;
-}
-
-html[dir="ltr"] .our-clients #slider-clients .carousel-control-prev img {
-  transform: rotate(0deg);
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-}
-
-html[dir="ltr"] .our-clients #slider-clients .carousel-control-next img {
-  transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-}
-
 html[dir="ltr"] .footer .custom-items .item .contact img {
   margin-left: 0;
   margin-right: 5px;
@@ -1629,6 +1649,12 @@ html[dir="ltr"] .footer .custom-items .item .map .location .address {
   html[dir="ltr"] .header .navbar .navbar-collapse .navbar-nav .nav-item + .nav-item {
     margin-right: 0 !important;
     margin-left: 50px !important;
+  }
+  html[dir="ltr"] .our-clients .owl-nav .owl-next {
+    margin-left: -17px !important;
+  }
+  html[dir="ltr"] .our-clients .owl-nav .owl-prev {
+    margin-right: -22px !important;
   }
 }
 

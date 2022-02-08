@@ -350,6 +350,10 @@
 }
 .our-clients{
     padding: 100px 0 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     .title{
         @extend %title ; 
         &::after{
@@ -357,62 +361,56 @@
             width: 60px;
         }
     }
-    #slider-clients{
-        width: 97% ;
-        margin: auto;
-        height: 250px;
-        overflow: hidden;
-        .clients{
-            width: 88% ;
-            margin: 0 auto;
-            display: flex;
-            justify-content: left;
-            overflow-x: auto;
-            &::-webkit-scrollbar{
-                visibility: hidden;
-            }
-            .client{
-                position: relative;
-                left: 0;
-                text-align: center;
-                transition: all 500ms ease;
-                -webkit-transition: all 500ms ease;
-                -moz-transition: all 500ms ease;
-                -ms-transition: all 500ms ease;
-                -o-transition: all 500ms ease;
-                img{
-                    width: 175px;
-                    margin-bottom: 20px;
-                }
-                .name{
-                    font-size: 12pt;
-                    font-weight: bold;
-                    color: $black-color;
-                }
-            }
-            .client + .client{
-                margin-right: 50px;
+    .owl-stage-outer{
+        height: 245px !important;
+    }
+    .owl-carousel{
+        position: relative !important ; 
+    }
+    .owl-item{
+        .name{
+            font-size: 12pt;
+            font-weight: bold;
+        }
+    }
+    .owl-nav{
+        position: absolute;
+        bottom: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        [class*=owl-]{
+            background-color: initial !important;
+            color: initial !important;
+        }
+        .owl-prev{
+            margin-right: -50px !important;
+            height: 50px;
+            span{
+                content: url("../icons/Group\ 41010.svg");
             }
         }
-        .custom-btn{
-            width: 30px;
-            height: 30px;
-        }
-        .carousel-control-prev{
-            top: 60px;
-            right: 40px;
-        }
-        .carousel-control-next{
-            left: 40px;
-            top: 60px;
-            img{
-                transform: rotate(180deg);
-                -webkit-transform: rotate(180deg);
-                -moz-transform: rotate(180deg);
-                -ms-transform: rotate(180deg);
-                -o-transform: rotate(180deg);
+        .owl-next{
+            margin-left: -50px !important;
+            height: 50px;
+            transform: rotate(-180deg);
+            -webkit-transform: rotate(-180deg);
+            -moz-transform: rotate(-180deg);
+            -ms-transform: rotate(-180deg);
+            -o-transform: rotate(-180deg);
+            span{
+                content: url("../icons/Group\ 41010.svg");
+                transform: rotateX(-180deg);
+                -webkit-transform: rotateX(-180deg);
+                -moz-transform: rotateX(-180deg);
+                -ms-transform: rotateX(-180deg);
+                -o-transform: rotateX(-180deg);
             }
         }
+    }
+    .owl-dot{
+        display: none !important;
     }
 }
 .footer{
@@ -558,8 +556,8 @@
         top: -130px;
     }
     .our-clients{
-        #slider-clients{
-            width: 88%;
+        .owl-stage-outer{
+            height: 225px !important;
         }
     }
 }
@@ -578,11 +576,6 @@
                     }
                 }
             }
-        }
-    }
-    .our-clients{
-        #slider-clients{
-            width: 96%;
         }
     }
 }
@@ -629,14 +622,13 @@
             padding-inline: 90px;
         }
     }
+}
+@media(min-width : 1199px) and(max-width:1200px){
     .our-clients{
-        #slider-clients{
-            width: 82%;
-            .carousel-control-prev{
-                right: 30px;
-            }
-            .carousel-control-next{
-                left: 30px;
+        .owl-item{
+            margin-left: 98px !important;
+            .item{
+                width: 175px;
             }
         }
     }
@@ -683,9 +675,18 @@
         padding-inline: 290px;
     }
     .our-clients{
-        #slider-clients{
-            .clients{
-                width: 75%;
+        .owl-nav{
+            .owl-next{
+                margin-left: -17px !important;
+            }
+            .owl-prev{
+                margin-right: -22px !important;
+            }
+        }
+        .owl-item{
+            margin-left: 98px !important;
+            .item{
+                width: 175px;
             }
         }
     }
@@ -771,10 +772,19 @@
         padding-inline: 25px;
     }
     .our-clients{
-        #slider-clients{
-            .clients{
-                width: 77%;
+        .owl-stage-outer{
+            height: 435px !important;
+            .owl-item{
+                .name{
+                    font-size: 17pt;
+                }
+                .item{
+                    width: 100%;
+                }
             }
+        }
+        .owl-nav{
+            bottom: 235px ;
         }
     }
     .footer{
@@ -814,13 +824,6 @@
             }
             .carousel-control-prev , .carousel-control-next{
                 top: 250px;
-            }
-        }
-    }
-    .our-clients{
-        #slider-clients{
-            .clients{
-                width: 85%;
             }
         }
     }
@@ -882,13 +885,6 @@
     .why-choose-us{
         padding-inline: 170px;
     }
-    .our-clients{
-        #slider-clients{
-            .clients{
-                width: 93%;
-            }
-        }
-    }
 }
 @media (max-width: 768px) {
     .header{
@@ -928,6 +924,16 @@
             .carousel-control-next{
                 margin-left: 60px;
                 top: 200px;
+            }
+        }
+    }
+    .our-clients{
+        .owl-nav{
+            .owl-prev{
+                margin-right: -18px !important;
+            }
+            .owl-next{
+                margin-left: -18px !important;
             }
         }
     }
@@ -971,6 +977,17 @@
     }
 }
 @media (max-width: 767.98px) {
+    .our-clients{
+        .owl-nav{
+            bottom: 280px;
+            .owl-prev{
+                margin-right: -50px !important;
+            }
+            .owl-next{
+                margin-left: -50px !important;
+            }
+        }
+    }
     .footer{
         .container{
             max-width: 700px;
@@ -1078,9 +1095,16 @@
         padding-inline: 100px;
     }
     .our-clients{
-        #slider-clients{
-            .clients{
-                width: 85%;
+        .owl-stage-outer{
+            height: 625px !important;
+        }
+        .owl-nav{
+            bottom: 335px;
+            .owl-prev{
+                margin-right: 0 !important;
+            }
+            .owl-next{
+                margin-left: 0 !important;
             }
         }
     }
@@ -1186,9 +1210,13 @@
         padding-inline: 70px;
     }
     .our-clients{
-        #slider-clients{
-            .clients{
-                width: 55%;
+        .owl-nav{
+            bottom: 410px;
+            .owl-prev{
+                margin-right: -10px !important;
+            }
+            .owl-next{
+                margin-left: -10px !important; 
             }
         }
     }
@@ -1280,10 +1308,8 @@
         }
     }
     .our-clients{
-        #slider-clients{
-            .clients{
-                width: 55%;
-            }
+        .owl-nav{
+            bottom: 430px;
         }
     }
 }
@@ -1369,17 +1395,15 @@
     .why-choose-us{
         padding-inline: 30px;
         .title{
-            font-size: 20pt;
+            font-size: 18pt;
         }
         .btn{
             width: 200px;
         }
     }
     .our-clients{
-        #slider-clients{
-            .clients{
-                width: 76%;
-            }
+        .owl-nav{
+            bottom: 475px;
         }
     }
 }
@@ -1547,33 +1571,6 @@ html[dir = "ltr"]{
                 margin-right: 0;
             }
         }
-        #slider-clients{
-            overflow: hidden;
-            .clients{
-                .client + .client{
-                    margin-left: 50px;
-                    margin-right: 0;
-                }
-            }
-            .carousel-control-prev{
-                img{
-                    transform: rotate(0deg);
-                    -webkit-transform: rotate(0deg);
-                    -moz-transform: rotate(0deg);
-                    -ms-transform: rotate(0deg);
-                    -o-transform: rotate(0deg);
-                }
-            }
-            .carousel-control-next{
-                img{
-                    transform: rotate(180deg);
-                    -webkit-transform: rotate(180deg);
-                    -moz-transform: rotate(180deg);
-                    -ms-transform: rotate(180deg);
-                    -o-transform: rotate(180deg);
-                }
-            }
-        }
     }
     .footer{
         .custom-items{
@@ -1636,6 +1633,16 @@ html[dir = "ltr"]{
                             margin-left: 50px !important;
                         }
                     }
+                }
+            }
+        }
+        .our-clients{
+            .owl-nav{
+                .owl-next{
+                    margin-left: -17px !important;
+                }
+                .owl-prev{
+                    margin-right: -22px !important;
                 }
             }
         }
