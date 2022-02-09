@@ -9,22 +9,19 @@ $(function(){
     }) ;
 
     $('.owl-carousel').owlCarousel({
-        loop: true,
+        loop: false,
         rtl:true,
         margin: 15,
         nav: true,
         responsive: {
             0: {
                 items: 1 , 
-                loop: true,
             },
             600: {
                 items: 2 , 
-                loop: true,
             },
             1000: {
                 items: 6 , 
-                loop: true,
             },
         }
     })
