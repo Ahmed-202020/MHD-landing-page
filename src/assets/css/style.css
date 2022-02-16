@@ -528,6 +528,12 @@ body ul {
   position: relative !important;
 }
 
+.our-clients .owl-item img {
+  min-height: 150px;
+  max-height: 150px;
+  margin-bottom: 12px;
+}
+
 .our-clients .owl-item .name {
   font-size: 12pt;
   font-weight: bold;
@@ -535,7 +541,7 @@ body ul {
 
 .our-clients .owl-nav {
   position: absolute;
-  bottom: 100px;
+  bottom: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -546,6 +552,11 @@ body ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
+  transform: translateY(-25%);
+  -webkit-transform: translateY(-25%);
+  -moz-transform: translateY(-25%);
+  -ms-transform: translateY(-25%);
+  -o-transform: translateY(-25%);
 }
 
 .our-clients .owl-nav [class*=owl-] {
@@ -554,7 +565,7 @@ body ul {
 }
 
 .our-clients .owl-nav .owl-prev {
-  margin-right: -50px !important;
+  margin-right: -49px !important;
   height: 50px;
 }
 
@@ -751,6 +762,9 @@ body ul {
   .our-clients .owl-stage-outer {
     height: 225px !important;
   }
+  .our-clients .owl-nav {
+    bottom: 49%;
+  }
 }
 
 @media (min-width: 1280px) and (max-width: 1281px) {
@@ -793,14 +807,33 @@ body ul {
   .about-us .text {
     padding-inline: 90px;
   }
+  .our-clients .owl-stage-outer {
+    height: 200px !important;
+  }
+  .our-clients .owl-nav {
+    bottom: 40%;
+  }
+  .our-clients .owl-nav .owl-next {
+    margin-left: -14px !important;
+  }
 }
 
 @media (min-width: 1199px) and (max-width: 1200px) {
+  .our-clients .owl-stage-outer {
+    width: 825px;
+    margin: auto;
+  }
   .our-clients .owl-item {
-    margin-left: 98px !important;
+    margin-left: 140px !important;
   }
   .our-clients .owl-item .item {
     width: 175px;
+  }
+  .our-clients .owl-nav .owl-prev {
+    margin-right: -5px !important;
+  }
+  .our-clients .owl-nav .owl-next {
+    margin-left: 77px !important;
   }
 }
 
@@ -833,17 +866,21 @@ body ul {
   .why-choose-us {
     padding-inline: 290px;
   }
-  .our-clients .owl-nav .owl-next {
-    margin-left: -17px !important;
-  }
-  .our-clients .owl-nav .owl-prev {
-    margin-right: -22px !important;
+  .our-clients .owl-stage-outer {
+    width: 825px;
+    margin: auto;
   }
   .our-clients .owl-item {
-    margin-left: 98px !important;
+    margin-left: 140px !important;
   }
   .our-clients .owl-item .item {
     width: 175px;
+  }
+  .our-clients .owl-nav .owl-prev {
+    margin-right: -5px !important;
+  }
+  .our-clients .owl-nav .owl-next {
+    margin-left: 77px !important;
   }
 }
 
@@ -934,7 +971,10 @@ body ul {
     width: 100%;
   }
   .our-clients .owl-nav {
-    bottom: 235px;
+    bottom: 72%;
+  }
+  .our-clients .owl-nav .owl-next {
+    margin-left: -50px !important;
   }
   .footer .custom-col {
     display: -webkit-box;
@@ -1093,14 +1133,11 @@ body ul {
 }
 
 @media (max-width: 767.98px) {
-  .our-clients .owl-nav {
-    bottom: 280px;
-  }
   .our-clients .owl-nav .owl-prev {
     margin-right: -50px !important;
   }
   .our-clients .owl-nav .owl-next {
-    margin-left: -50px !important;
+    margin-left: -51px !important;
   }
   .footer .container {
     max-width: 700px;
@@ -1202,7 +1239,7 @@ body ul {
     height: 625px !important;
   }
   .our-clients .owl-nav {
-    bottom: 335px;
+    bottom: 81%;
   }
   .our-clients .owl-nav .owl-prev {
     margin-right: 0 !important;
@@ -1289,9 +1326,6 @@ body ul {
   .why-choose-us {
     padding-inline: 70px;
   }
-  .our-clients .owl-nav {
-    bottom: 410px;
-  }
   .our-clients .owl-nav .owl-prev {
     margin-right: -10px !important;
   }
@@ -1372,9 +1406,6 @@ body ul {
   .why-choose-us .btn {
     width: 300px;
   }
-  .our-clients .owl-nav {
-    bottom: 430px;
-  }
 }
 
 @media (min-width: 280px) and (max-width: 358px) {
@@ -1454,9 +1485,6 @@ body ul {
   }
   .why-choose-us .btn {
     width: 200px;
-  }
-  .our-clients .owl-nav {
-    bottom: 475px;
   }
 }
 
@@ -1649,12 +1677,6 @@ html[dir="ltr"] .footer .custom-items .item .map .location .address {
   html[dir="ltr"] .header .navbar .navbar-collapse .navbar-nav .nav-item + .nav-item {
     margin-right: 0 !important;
     margin-left: 50px !important;
-  }
-  html[dir="ltr"] .our-clients .owl-nav .owl-next {
-    margin-left: -17px !important;
-  }
-  html[dir="ltr"] .our-clients .owl-nav .owl-prev {
-    margin-right: -22px !important;
   }
 }
 
